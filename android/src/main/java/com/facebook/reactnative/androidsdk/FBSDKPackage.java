@@ -36,9 +36,9 @@ public class FBSDKPackage implements ReactPackage {
 
     public static final String VERSION_TO_RELEASE = "ReactNative-v0.6.3";
 
-    private CallbackManager mCallbackManager;
-    public FBSDKPackage(CallbackManager callbackManager) {
-        mCallbackManager = callbackManager;
+    private static CallbackManager mCallbackManager = CallbackManager.Factory.create();
+
+    public FBSDKPackage() {
     }
 
     @Override
