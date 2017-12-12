@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.license       = package["license"]
   s.homepage      = package["homepage"]
   s.source        = { :git => 'https://github.com/facebook/react-native-fbsdk.git' }
+  s.resources     = "RCTFBSDK/assets/*"
   s.platform      = :ios, '7.0'
   s.dependency      'React'
 
